@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/jamarcushurd/cpp-lab007-jamarcus-hurd2/src",
+      "program": "/Users/jamarcushurd/cpp-lab007-jamarcus-hurd2/src/build/Debug/outDebug"
+    }
+  ]
+}

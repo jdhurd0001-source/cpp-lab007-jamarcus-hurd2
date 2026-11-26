@@ -20,12 +20,12 @@ Students should implement each required function recursively, without using loop
 
 ## Comparison Requirement
 
-For each algorithm where an iterative solution is reasonable, provide a written comparison covering:
+For each algorithm, the recursive and iterative implementations have the following characteristics:
 
-- time complexity;
-- space complexity;
-- number and depth of recursive calls;
-- readability and maintainability;
-- advantages and disadvantages of recursion;
-- stack overflow risk;
-- Big-Oh analysis for both recursive and iterative forms.
+- **Factorial:** Both forms are $O(n)$ time. The recursive form uses $O(n)$ call-stack space, while the iterative form uses $O(1)$ additional space. Recursion is easy to read but repeated calls can exhaust the stack for large inputs.
+- **Fibonacci:** The direct recursive form is $O(2^n)$ time and $O(n)$ call-stack space because it repeats many subproblems. The iterative form is $O(n)$ time and $O(1)$ additional space, making it faster and safer for large inputs.
+- **Binary search:** Both forms are $O(\log n)$ time for sorted arrays. Recursive binary search uses $O(\log n)$ call-stack space, while iterative binary search uses $O(1)$ additional space. The iterative form is less prone to stack overflow and generally easier to maintain for many searches.
+- **Array sum:** Both forms are $O(n)$ time. The recursive form uses $O(n)$ call-stack space and the iterative form uses $O(1)$ additional space. Iteration is the clearer and more robust choice for this linear calculation.
+- **Array reversal:** Both forms are $O(n)$ time. The recursive form performs $O(n/2)$ swaps and uses $O(n)$ call-stack space; the iterative form performs the same number of swaps and uses $O(1)$ additional space.
+
+Recursion directly expresses divide-and-conquer and base-case structure, but deep recursion increases stack usage and can cause stack overflow. Iterative implementations are usually more efficient in auxiliary space, easier to reason about in this laboratory, and safer for large input sizes.
